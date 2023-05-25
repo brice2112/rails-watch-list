@@ -1,0 +1,8 @@
+<h1>Create new list:</h1>
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name, label: 'List name', error: 'Name is mandatory, please specify one' %>
+  <%# <%= f.input :remember_me, inline_label: 'Yes, remember me' %>
+  <%= f.button :submit %>
+  <%= f.association :films %>
+<% end %>
